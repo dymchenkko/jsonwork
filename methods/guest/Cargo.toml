@@ -1,0 +1,15 @@
+[package]
+name = "methods-guest"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[build-dependencies]
+risc0-build = "0.7"
+
+[target.riscv32im-unknown-none-elf.dependencies]
+risc0-zkvm-guest = "0.7"
+serde = { version = "1.0", default-features = false }
+checker-core = { path = "../../core" }
+cbor-no-std = "0.3.0"
