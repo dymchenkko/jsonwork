@@ -5,3 +5,5 @@ members = [
     "risc0-build-methods",
     "starter",
 ]
+[patch.crates-io]
+radium = { git = "https://github.com/mystor/radium.git", branch = "feature/3" }

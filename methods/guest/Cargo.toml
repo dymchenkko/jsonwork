@@ -13,3 +13,7 @@ risc0-zkvm-guest = "0.7"
 serde = { version = "1.0", default-features = false }
 checker-core = { path = "../../core" }
 cbor-no-std = "0.3.0"
+signature_bls = { version = "0.35.0" , default-features = false }
+
+[patch.crates-io]
+radium = { git = "https://github.com/stskeeps/radium"}
